@@ -1,0 +1,90 @@
+    body {
+        background-image: url(img/img.jpeg);
+        background-size: cover;
+    }
+
+    * {
+        margin: 0px;
+        padding: 0px;
+        box-sizing: border-box;
+    }
+
+
+    nav {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        min-height: 10vh;
+        background-color: #006A97;
+        font-family: "Times New Roman", sans-serif;
+    }
+
+    .logo {
+        color: white;
+        text-transform: uppercase;
+        letter-spacing: 5px;
+        font-size: 15px;
+        cursor: pointer;
+    }
+
+    .logo:hover {
+        color: #7BD86C;
+    }
+
+    .nav-links li {
+        list-style: none;
+
+    }
+
+    .nav-links li a:hover {
+        color: #7BD86C;
+    }
+
+    .nav-links {
+        display: inline-flex;
+        justify-content: space-around;
+        width: 40%;
+
+    }
+
+    .nav-links a {
+        display: flex;
+        justify-content: space-around;
+        color: white;
+        text-decoration: none;
+        letter-spacing: 3px;
+        font-weight: bold;
+        font-size: 10px;
+
+        padding-right: 10px;
+        padding-left: 1px;
+    }
+
+    h1 {
+    	margin-left: 20px;
+        margin-top: 100px;
+        color: #006A97;
+        font-size: 100px;
+    }
+
+    h4 {
+    	margin-left: 20px;
+        font-size: 30px;
+    }
+
+ .btn1{
+ 	margin-left: 20px;
+ 	border: 1px solid #3498db;
+ 	background:none;
+ 	padding: 10px 20px;
+ 	font-size: 20px;
+ 	font-family: "montserrat";
+ 	cursor: pointer;
+ 	margin:10px;
+
+ }
+
+ .btn1:hover{
+ 	color:#7BD86C;
+ 	transition: 0.4s;
+ }
