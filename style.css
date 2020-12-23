@@ -113,3 +113,36 @@ grid-gap: 1rem;
     max-width: 1000px;
     margin: auto;
 }
+.detajet {
+    border: none;
+    color: #888;
+    font-family: Josefin Sans;
+     font-size: 1rem;
+     width: 15rem;
+}
+.detajet1 {
+	border: none;
+	font-size: 1rem;
+  font-family: Josefin Sans;
+}
+.detajett {
+	border: none;
+	font-size: 1rem;
+  font-family: Josefin Sans;
+  width: 15rem;
+}
+.detajet2 {
+     font-size: 1rem;
+    text-transform: uppercase;
+    color: #A0CDE0;
+    font-weight: bold;
+    font-family: Josefin Sans;
+    border: none;
+    width: 15rem;
+
+}
+.years{
+	border: none;
+	width: 1.9rem;
+	font-weight: bold;	
+}
