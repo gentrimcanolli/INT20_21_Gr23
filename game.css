@@ -1,0 +1,30 @@
+* {
+    text-align: center;
+    
+}
+
+.container .header-one {
+    color: rgb(0, 0, 0);
+    
+  
+}
+
+button, form button {
+    border-radius: 80rem;
+    margin: 10px 20px;
+    padding: 5px 6px;
+    background-color: #1AAB8A;
+    cursor: pointer;
+    box-shadow: 0 1rem 1.4rem #006a97;
+    transform:scale(1.3) ;
+    transform: transform 100ms;
+}
+
+
+
+
+
+
+
+
+

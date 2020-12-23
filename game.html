@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Game</title>
+    <link rel="stylesheet" href="game.css">
+</head>
+
+<body>
+
+    <div class="container">
+
+        <h1 class="header-one">Klikoni në përgjigjjen që ju përshtatet... </h1>
+          <h2 class="header-two" >  
+            
+            *Nuk më përshtatet- 0 Pikë
+            <br>
+
+            *Përshtatet pak- 1 Pikë
+            <br>
+
+            *Përshtatet- 2 Pikë
+            <br>
+
+            *Përshtatet shumë - 3 Pikë
+        </h2>
+
+        <div id="question-1">
+            <p>1. Kliko pergjigjen qe te pershtatet ty</p>
+            <form id="form-question-1">
+                <button id="first-choice-1" data-points="0" onclick="addPoints('first-choice-1'); disableButtons('first')">Nuk më përshtatet</button>  
+                <button id="first-choice-2" data-points="1" onclick="addPoints('first-choice-2'); disableButtons('first')">Përshtatet pak</button>
+                <br>
+                <button id="first-choice-3" data-points="2" onclick="addPoints('first-choice-3'); disableButtons('first')">Përshtatet</button>
+                <button id="first-choice-4" data-points="3" onclick="addPoints('first-choice-4'); disableButtons('first')">Përshtatet shumë</button>
+            </form>
+        </div>
+
+        <hr>
+
+        <div id="question-2">
+            <p>2. Kliko pergjigjen qe te pershtatet ty</p>
+            <form id="form-question-2">
+                <button id="second-choice-1" data-points="0" onclick="addPoints('first-choice-1'); disableButtons('second')">Nuk më përshtatet</button>  
+                <button id="second-choice-2" data-points="1" onclick="addPoints('second-choice-2'); disableButtons('second')">Përshtatet pak</button>
+                <br>
+                <button id="second-choice-3" data-points="2" onclick="addPoints('second-choice-3'); disableButtons('second')">Përshtatet</button>
+                <button id="second-choice-4" data-points="3" onclick="addPoints('second-choice-4'); disableButtons('second')">Përshtatet shumë</button>   
+            </form>
+        </div>
+
+        <hr>
+
+        <div id="question-3">
+            <p>3. Kliko pergjigjen qe te pershtatet ty</p>
+            <form id="form-question-3">
+                <button id="third-choice-1" data-points="0" onclick="addPoints('third-choice-1'); disableButtons('third')">Nuk më përshtatet</button>
+                <button id="third-choice-2" data-points="1" onclick="addPoints('third-choice-2'); disableButtons('third')">Përshtatet pak</button>
+                <br>
+                <button id="third-choice-3" data-points="2" onclick="addPoints('third-choice-3'); disableButtons('third')">Përshtatet</button>
+                <button id="third-choice-4" data-points="3" onclick="addPoints('third-choice-4'); disableButtons('third')">Përshtatet shumë</button>
+            </form>
+        </div>
+
+        <hr>
+
+        <div id="question-4">
+            <p>4. Kliko pergjigjen qe te pershtatet ty</p>
+            <form id="form-question-4">
+                <button id="fourth-choice-1">Nuk më përshtatet</button>
+                <button id="fourth-choice-2">Përshtatet pak</button>
+                <br>
+                <button id="fourth-choice-3">Përshtatet</button>
+                <button id="fourth-choice-4">Përshtatet shumë</button>
+            </form>
+        </div>
+
+        <hr>
+
+        <div id="question-3">
+            <p>5. Kliko pergjigjen qe te pershtatet ty</p>
+            <form id="form-question-3">
+                <button id="fifth-choice-1">Nuk më përshtatet</button>
+                <button id="fifth-choice-2">Përshtatet pak</button>
+                <br>
+                <button id="fifth-choice-3">Përshtatet</button>
+                <button id="fifth-choice-4">Përshtatet shumë</button>
+            </form>
+        </div>
+
+        <hr>
+
+        <div id="question-3">
+            <p>6. Kliko pergjigjen qe te pershtatet ty</p>
+            <form id="form-question-3">
+                <button id="sixth-choice-1">Nuk më përshtatet</button>
+                <button id="sixth-choice-2">Përshtatet pak</button>
+                <br>
+                <button id="sixth-choice-3">Përshtatet</button>
+                <button id="sixth-choice-4">Përshtatet shumë</button>
+            </form>
+        </div>
+
+        <hr>
+
+        <div id="question-3">
+            <p>7. Kliko pergjigjen qe te pershtatet ty</p>
+            <form id="form-question-3">
+                <button id="seventh-choice-1">Nuk më përshtatet</button>
+                <button id="seventh-choice-2">Përshtatet pak</button>
+                <br>
+                <button id="seventh-choice-3">Përshtatet</button>
+                <button id="seventh-choice-4">Përshtatet shumë</button>
+            </form>
+        </div>
+
+        <hr>
+
+        <div id="question-3">
+            <p>8. Kliko pergjigjen qe te pershtatet ty</p>
+            <form id="form-question-3">
+                <button id="eighth-choice-1">Nuk më përshtatet</button>
+                <button id="eighth-choice-2">Përshtatet pak</button>
+                <br>
+                <button id="eighth-choice-3">Përshtatet</button>
+                <button id="eighth-choice-4">Përshtatet shumë</button>
+            </form>
+        </div>
+
+        <hr>
+
+        <div id="question-3">
+            <p>9. Kliko pergjigjen qe te pershtatet ty</p>
+            <form id="form-question-3">
+                <button id="ninth-choice-1">Nuk më përshtatet</button>
+                <button id="ninth-choice-2">Përshtatet pak</button>
+                <br>
+                <button id="ninth-choice-3">Përshtatet</button>
+                <button id="ninth-choice-4">Përshtatet shumë</button>
+            </form>
+        </div>
+
+        <hr>
+
+        <div id="question-3">
+            <p>10. Kliko pergjigjen qe te pershtatet ty</p>
+            <form id="form-question-3">
+                <button id="tenth-choice-1">Nuk më përshtatet</button>
+                <button id="tenth-choice-2">Përshtatet pak</button>
+                <br>
+                <button id="tenth-choice-3">Përshtatet</button>
+                <button id="tenth-choice-4">Përshtatet shumë</button>
+            </form>
+        </div>
+
+        <hr>
+
+        <div id="question-3">
+            <p>11. Kliko pergjigjen qe te pershtatet ty</p>
+            <form id="form-question-3">
+                <button id="eleventh-choice-1">Nuk më përshtatet</button>
+                <button id="eleventh-choice-2">Përshtatet pak</button>
+                <br>
+                <button id="eleventh-choice-3">Përshtatet</button>
+                <button id="eleventh-choice-4">Përshtatet shumë</button>
+            </form>
+        </div>
+
+        <hr>
+
+        <div id="question-3">
+            <p>12. Kliko pergjigjen qe te pershtatet ty</p>
+            <form id="form-question-3">
+                <button id="twelfth-choice-1">Nuk më përshtatet</button>
+                <button id="twelfth-choice-2">Përshtatet pak</button>
+                <br>
+                <button id="twelfth-choice-3">Përshtatet</button>
+                <button id="twelfth-choice-4">Përshtatet shumë</button>
+            </form>
+        </div>
+
+        <hr>
+
+        <div id="question-3">
+            <p>13. Kliko pergjigjen qe te pershtatet ty</p>
+            <form id="form-question-3">
+                <button id="thirteenth-choice-1">Nuk më përshtatet</button>
+                <button id="thirteenth-choice-2">Përshtatet pak</button>
+                <br>
+                <button id="thirteenth-choice-3">Përshtatet</button>
+                <button id="thirteenth-choice-4">Përshtatet shumë</button>
+            </form>
+        </div>
+
+        <hr>
+
+        <div id="question-3">
+            <p>14. Kliko pergjigjen qe te pershtatet ty</p>
+            <form id="form-question-3">
+                <button id="fourteenth-choice-1">Nuk më përshtatet</button>
+                <button id="fourteenth-choice-2">Përshtatet pak</button>
+                <br>
+                <button id="fourteenth-choice-3">Përshtatet</button>
+                <button id="fourteenth-choice-4">Përshtatet shumë</button>
+            </form>
+        </div>
+
+        <hr>
+
+        <div id="question-3">
+            <p>15. Kliko pergjigjen qe te pershtatet ty</p>
+            <form id="form-question-3">
+                <button id="fifteenth-choice-1">Nuk më përshtatet</button>
+                <button id="fifteenth-choice-2">Përshtatet pak</button>
+                <br>
+                <button id="fifteenth-choice-3">Përshtatet</button>
+                <button id="fifteenth-choice-4">Përshtatet shumë</button>
+            </form>
+        </div>
+        <br>
+        <br>
+        <hr>
+        
+        <button id="endButton" onclick="sumPoints()">Perfundova</button>
+        
+        <div id="displayPoints"></div>
+
+        <hr>
+
+    </div>  
+    <script src="game.js"></script>
+</body>
+
+</html>
