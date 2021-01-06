@@ -2,52 +2,77 @@
 <html>
 
 <head>
-    <meta charset="utf-8">
-    <title>Find your ideal Job</title>
-    <link rel="stylesheet" type="text/css" href="CSS/projekti.css">
+  <meta charset="utf-8">
+  <title>Find your ideal Job</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" type="text/css" href="CSS/projekti.css">
+
 </head>
 
 <body>
-    <nav>
-        <div class="logo">
-            <h4>Find your ideal job</h4>
-        </div>
-        <ul class="nav-links">
-            <li>
-                <a href="">Kryefaqja</a>
-            </li>
-            <li>
-                <a href="">Krijo CV</a>
-            </li>
-            <li>
-                <a href="">Shpallje</a>
-            </li>
-            <li>
-                <a href="">K&eumlshilla</a>
-            </li>
-            <li>
-                <a href="">Rreth nesh</a>
-            </li>
-            <li>
-                <a href="">Kontakto</a>
-            </li>
-        </ul>
-    </nav>
+  <nav>
+    <input id="nav-toggle" type="checkbox">
+    <div class="logo">Find your ideal job</div>
+    <ul class="links">
+      <li><a href="#home">Kryefaqja</a></li>
+      <li><a href="#cv">Krijo CV</a></li>
+      <li><a href="#quiz">Kuiz</a></li>
+      <li><a href="#Shpallje">Shpallje</a></li>
+      <li><a href="#keshilla">K&eumlshilla</a></li>
+      <li><a href="#aboutus">Rreth nesh</a></li>
+    </ul>
+    <label for="nav-toggle" class="icon-burger">
+      <div class="line"></div>
+      <div class="line"></div>
+      <div class="line"></div>
+    </label>
+  </nav>
 
-<div class="home">
-    <h1 style="color:#006A97 ">idealJob.##</h1>
-    <h4>
-        Let us help you find <br>
-        your dream job
-    </h4>
-</div>
 
-    <div class="container">
-        <button class=" btn btn1">Krijo CV-n t&eumlnde tani</button>
+  <div class="slider">
+    <div class="myslide fade">
+      <div class="txt">
+        <h1>Krijo CV</h1>
+        <p>Krijo CV-n<br>t&eumlnde tani</p>
+      </div>
+      <img src="img/CV.jpg" style="width: 100%; height: 100%;">
     </div>
-    
+    <div class="myslide fade">
+      <div class="txt">
+        <h1>Kuiz</h1>
+        <p>Luaj kuiz<br>q&euml t&euml shoh&eumlsh se cili profesion &eumlsht&euml p&eumlr ty</p>
+      </div>
+      <img src="img/quiz.jpg" style="width: 100%; height: 100%;">
+    </div>
 
-    
-</body>
+    <div class="myslide fade">
+      <div class="txt">
+        <h1>Shpallje</h1>
+        <p>K&eumlrkon/ofron pun&euml<br>Shiko shpalljet</p>
+      </div>
+      <img src="img/img3.jpg" style="width: 100%; height: 100%;">
+    </div>
 
-</html>
+    <div class="myslide fade">
+      <div class="txt">
+        <h1>K&eumlshilla</h1>
+        <p>Nuk ke punuar asnj&eumlher&euml<br>M&eumlso si t&euml krijosh CV, si t&euml jap&eumlsh intervist&euml pune etj...</p>
+      </div>
+      <img src="img/img1.jpg" style="width: 100%; height: 100%;">
+    </div>
+
+
+
+    <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+    <a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+    <div class="dotsbox" style="text-align:center">
+      <span class="dot" onclick="currentSlide(1)"></span>
+      <span class="dot" onclick="currentSlide(2)"></span>
+      <span class="dot" onclick="currentSlide(3)"></span>
+      <span class="dot" onclick="currentSlide(4)"></span>
+    </div>
+  </div>
+
+  <script src="projekti.js"></script>
+
