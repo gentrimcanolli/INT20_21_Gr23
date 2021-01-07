@@ -146,3 +146,45 @@ grid-gap: 1rem;
 	width: 1.9rem;
 	font-weight: bold;	
 }
+.container{
+	text-align: right;
+}
+.btn{
+
+	border: 2.3px solid #A0CDE0;
+	background: none;
+	padding: 10px 20px;
+    font-size: 20px;
+    font-family: Josefin Sans;
+    cursor: pointer;
+    margin: 10px;
+    transition: 0.8s;
+    position: relative;
+    overflow: hidden;
+    border-radius: 10px;
+}
+.btn1{
+	color: #A0CDE0;
+
+}
+.btn1:hover{
+color: #fff;
+}
+
+.btn::before{
+	content: "";
+	position: absolute;
+	left: 0;
+	width: 100%;
+	height: 0%;
+	background: #A0CDE0;
+	z-index: -1;
+     transition: 0.8s;
+}
+.btn1::before{
+top: 0;
+border-radius: 0 0 50% 50%;
+}
+.btn1:hover::before{
+	height: 180%;
+}
