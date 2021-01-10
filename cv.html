@@ -5,12 +5,286 @@
 	<link rel="stylesheet" type="text/css" href="style.css" alt="">
 <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap" rel="stylesheet">
 <link rel="stylesheet" type="text/js" href="forms.js">
+	
+	
+	<style type="text/css">
+	* {
+  margin: 0;
+  padding: 0;
+  font-family: sans-serif;
+  box-sizing: border-box;
+}
+
+nav {
+  position: fixed;
+  z-index: 10;
+  left: 0;
+  right: 0;
+  top: 0;
+  font-family: 'Montserrat', sans-serif;
+  padding: 0 5%;
+  height: 70px;
+  background-color: #006A97;
+}
+
+nav .logo {
+  float: left;
+  width: 40%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  font-size: 24px;
+  color: rgba(200, 240, 250, 1);
+  text-transform: uppercase;
+  cursor: pointer;
+}
+
+nav .logo:hover {
+  color: rgba(82, 156, 238, 1);
+}
+
+nav .links {
+  float: right;
+  padding: 0;
+  margin: 0;
+  width: 60%;
+  height: 100%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+nav .links li {
+  list-style: none;
+}
+
+nav .links a {
+  display: block;
+  padding: 1em;
+  font-size: 16px;
+  font-weight: bold;
+  color: rgba(200, 240, 250, 1);
+  text-decoration: none;
+}
+
+#nav-toggle {
+  position: absolute;
+  top: -100px;
+}
+
+nav .icon-burger {
+  display: none;
+  position: absolute;
+  right: 5%;
+  top: 50%;
+  cursor: pointer;
+  transform: translateY(-50%);
+}
+
+nav .icon-burger .line {
+  width: 30px;
+  height: 5px;
+  background-color: #fff;
+  margin: 5px;
+  border-radius: 3px;
+  transition: all .3s ease-in-out;
+}
+
+nav .links a:hover {
+  color: rgba(82, 156, 238, 1);
+}
+
+@media screen and (max-width: 820px) {
+  nav .logo {
+    float: none;
+    width: auto;
+    justify-content: center;
+  }
+
+  nav .links {
+    float: none;
+    position: fixed;
+    z-index: 9;
+    left: 0;
+    right: 0;
+    top: 100px;
+    bottom: 100%;
+    width: auto;
+    height: auto;
+    flex-direction: column;
+    justify-content: space-evenly;
+    background-color: rgba(0, 0, 0, .8);
+    overflow: hidden;
+    box-sizing: border-box;
+    transition: all .5s ease-in-out;
+  }
+
+  nav .links a {
+    font-size: 20px;
+  }
+
+  nav :checked~.links {
+    top: 70px;
+    bottom: 0;
+  }
+
+  nav .icon-burger {
+    display: block;
+  }
+
+  nav :checked~.icon-burger .line:nth-child(1) {
+    transform: translateY(10px) rotate(225deg);
+  }
+
+  nav :checked~.icon-burger .line:nth-child(3) {
+    transform: translateY(-10px) rotate(-225deg);
+  }
+
+  nav :checked~.icon-burger .line:nth-child(2) {
+    opacity: 0;
+  }
+}
+
+
+footer {
+  display: -webkit-flex;
+  display: -moz-flex;
+  display: -ms-flex;
+  display: -o-flex;
+  display: flex;
+  flex-flow: row wrap;
+  padding: 50px;
+  color: white;
+  background-color: #011c39;
+}
+
+.footer>* {
+  flex: 1 100%;
+}
+
+.footer-left {
+  margin-right: 1.25em;
+  margin-bottom: 2em;
+}
+
+.footer-left-img {
+  width: 50%;
+}
+
+h2 {
+  font-weight: 600;
+  font-size: 17px;
+  margin-bottom: 5px;
+  margin-top: 15px;
+}
+
+.footer ul {
+  line-height: 2em;
+}
+
+.footer li {
+  list-style: none;
+}
+
+.footer a {
+  text-decoration: none;
+}
+
+.footer-right {
+  display: -webkit-flex;
+  display: -moz-flex;
+  display: -ms-flex;
+  display: -o-flex;
+  display: flex;
+  flex-flow: row wrap;
+}
+
+.footer-right>* {
+  flex: 1 50%;
+  margin-right: 1.25em;
+}
+
+.box a {
+  color: #999;
+}
+
+.footer-bottom {
+  text-align: center;
+  color: #999;
+  padding-top: 50px;
+}
+
+.footer-left p {
+  padding-right: 20%;
+  color: #999;
+}
+
+.footer-left img {
+  width: 90px;
+  height: 90px;
+  background: white;
+  border-radius: 50px;
+  margin-bottom: 15px;
+}
+
+.socials i:hover {
+  color: rgba(82, 156, 238, 1);
+}
+
+.socials a i {
+  color: white;
+  padding: 10px;
+  font-size: 30px;
+}
+
+@media screen and (min-width: 600px) {
+  .footer-right>* {
+    flex: 1
+  }
+
+  .footer-left {
+    flex: 1 0px;
+  }
+
+  .footer-right {
+    flex: 2 0px;
+  }
+}
+
+.titulli2 {
+  text-align: center;
+  margin: 100px auto 50px;
+}
+</style>
+	
+	
 	</head>
 <body>
+	
+	
+	<br><br><br><br><br><br>
+	  <header>
+  <nav>
+    <input id="nav-toggle" type="checkbox">
+    <div class="logo">Find your ideal job</div>
+    <ul class="links">
+      <li><a href="#home">Kryefaqja</a></li>
+      <li><a href="#cv">Krijo CV</a></li>
+      <li><a href="#quiz">Kuiz</a></li>
+      <li><a href="#Shpallje">Shpallje</a></li>
+      <li><a href="#keshilla">K&eumlshilla</a></li>
+      <li><a href="#aboutus">Rreth nesh</a></li>
+    </ul>
+    <label for="nav-toggle" class="icon-burger">
+      <div class="line"></div>
+      <div class="line"></div>
+      <div class="line"></div>
+    </label>
+  </nav>
+</header>
+	
+	
 	<form id="form-user">
- <div class="form-box" style="text-align: right;">
-	<button class="btn btn1" id=" button-cancel"><b>Reset</b></button>
- </div>
 	<div class="resume">
 		<div class="column">
 			<section class="profile"><h1><input type="text" name="name" placeholder="Emri Mbiemri" style=" font-size: 2rem;
@@ -19,7 +293,7 @@
 <img src="photocv.png" alt=" fotojuaj ">
 </section>
 <section class="contact">
-	<h2>Detaje personale</h2>
+	<h2>Detaje personale</h2><br>
 	<address>
 	<ul>
 	<li><input type="name" placeholder="Rruga, Qyteti" class="detajet" style=" text-align: right;"></li>
@@ -126,10 +400,62 @@
 </section>
 		</div>
 	</div>
+				<div class="container">
+	 <div class="form-box" style="text-align: right;">
+	<button class="btn btn1" id=" button-cancel"><b>Rifillo</b></button>
+ </div>
+<div><button class="btn btn1" id="button-download" type="downoad"><b>Shkarko</b></button></div>
+</div>
 				</form>
 
 
 
-<div style="height: 600px"></div>
+<div style="height: 300px"></div>
+			
+
+<footer class="footer">
+    <div class="footer-left">
+      <img src="imagelogo1.png" alt="logo">
+
+
+      <p>Na ndiqni n&euml rrjete sociale</p>
+      <br>
+      <div class="socials">
+        <a href="https://www.facebook.com/UniversitetiPrishtines"><i class="fa fa-facebook"></i></a>
+        <a href="https://www.instagram.com/uni.pr/"><i class="fa fa-instagram"></i></a>
+        <a href="https://www.uni-pr.edu/"><i class="fa fa-google"></i></a>
+      </div>
+    </div>
+    <ul class="footer-right">
+      <li class="features">
+        <h2>Linqet</h2>
+
+        <ul class="box">
+          <li> <a href="#">Kryefaqja</a> </li>
+          <li> <a href="#">Krijo CV</a> </li>
+          <li> <a href="#">Kuiz</a> </li>
+          <li> <a href="#">Shpallje</a> </li>
+          <li> <a href="#">K&eumlshilla</a> </li>
+        </ul>
+      </li>
+
+      <li class="features">
+        <h2>Na Kontakto</h2>
+
+        <ul class="box">
+          <li> <a
+              href="https://www.google.com/maps/place/Universiteti+i+Prishtin%C3%ABs/@42.6484076,21.1665845,19z/data=!3m1!4b1!4m12!1m6!3m5!1s0x13549ec1b5430613:0x76c9353194f18686!2sUniversiteti+i+Prishtin%C3%ABs!8m2!3d42.6484076!4d21.1671317!3m4!1s0x13549ec1b5430613:0x76c9353194f18686!8m2!3d42.6484076!4d21.1671317">Rr.
+              "George Bush", Nr.31, 10 000 Prishtinë, Republika e Kosovës</a></li>
+          <li> <a href="https://contacts.google.com/">Tel: +38345463922</a> </li>
+          <li> <a href="mailto:gentrim.canolli@student.uni-pr.edu">Email: gentrim.canolli@student.uni-pr.edu</a> </li>
+
+        </ul>
+      </li>
+
+    </ul>
+    <div class="footer-bottom">
+      <p>All Rights Reserved By &copy; UP-students 2021</p>
+    </div>
+  </footer>
 </body>
 </html>
