@@ -11,7 +11,7 @@ html{
 body{
 	padding: 2rem 2.5rem;
 	background: linear-gradient(
-         #dfe0db, #dfe0db 50%, #A0CDE0  50%, #A0CDE0);
+         #dfe0db, #A0CDE0 50%, #A0CDE0  50%, #dfe0db );
 
 }
 h1{
