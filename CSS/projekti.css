@@ -150,8 +150,8 @@ nav .links a:hover {
 
 .slider {
   position: relative;
-  margin-left: 100px;
-  margin-right: 100px;
+  margin-left: 25px;
+  margin-right: 25px;
   background: #2c3e50;
 }
 
@@ -356,8 +356,13 @@ nav .links a:hover {
     margin-bottom: 20px;
   }
 
+  .profili {
+    height: 50px;
+    width: 50px;
+  }
+
   .Row {
-    margin-left: 125px;
+    margin-left: 128px;
   }
 }
 
@@ -464,6 +469,10 @@ h2 {
   .footer-right {
     flex: 2 0px;
   }
+
+  #Canvas1 {
+    width: 50%;
+  }
 }
 
 .titulli2 {
@@ -521,4 +530,39 @@ h2 {
 .profili:hover {
   background: #006A97;
   transition: 0.4s;
+}
+
+#Canvas1 {
+  width: 100px;
+  height: 10px;
+}
+
+.Profesionet {
+  margin: 20px;
+  padding: 20px;
+  background: #006A97;
+  border-radius: 10px;
+}
+
+.puna1 {
+  background: white;
+  border-radius: 10px;
+  margin: 5px;
+  padding: 0px 5px;
+}
+
+#ph1 {
+  color: white;
+  text-align: center;
+}
+
+#punet {
+  padding-top: 5px;
+  text-align: center;
+  text-decoration: none;
+  color: rgba(82, 156, 238, 1);
+}
+
+.puna1 p {
+  padding: 0px 20px 20px 20px;
 }
