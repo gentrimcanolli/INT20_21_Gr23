@@ -1,9 +1,10 @@
-* {
+body{
     text-align: center;
     background-color: beige;
     
 }
 button, form button {
+    box-sizing: content-box;
     border-radius: 80rem;
     margin: 10px 20px;
     padding: 5px 6px;
