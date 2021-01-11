@@ -290,7 +290,30 @@ h2 {
 			<section class="profile"><h1><input type="text" name="name" placeholder="Emri Mbiemri" style=" font-size: 2rem;
 	text-transform: uppercase; border: none;  font-family: Josefin Sans;"> 
 <p><em><input  type="name" placeholder="Profesioni" class="detajet" style="font-size: 1.4rem;"></em></p>
-<img src="photocv.png" alt=" fotojuaj ">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+<div id="profile-container">
+   <image id="profileImage" src="fotoo.png" />
+</div>
+<input id="imageUpload" type="file" 
+       name="profile_photo" placeholder="Photo" required="" capture>
+
+<script type="text/javascript">
+  $("#profileImage").click(function(e) {
+    $("#imageUpload").click();
+});
+
+function fasterPreview( uploader ) {
+    if ( uploader.files && uploader.files[0] ){
+          $('#profileImage').attr('src', 
+             window.URL.createObjectURL(uploader.files[0]) );
+    }
+}
+
+$("#imageUpload").change(function(){
+    fasterPreview( this );
+});
+</script>
+				
 </section>
 <section class="contact">
 	<h2>Detaje personale</h2><br>
@@ -315,7 +338,7 @@ h2 {
 	</ul>
 </section>
 <section class="skills">
-	<h2>Shkathtësit</h2>
+	<h2>Shkathtësit</h2> <br>
 	<ul> <li><h3>Profesionale</h3>
 <ul>
 	<li style="list-style: square;"><input type="name" class="detajet1"></li>
@@ -341,7 +364,7 @@ h2 {
 		</div>
 		<div class="column">
 			<section class="education">
-	<h2>Edukimi Arsimor</h2>
+	<h2>Edukimi Arsimor</h2><br>
 	<ul class="timeLine">
 		<li class="event"> 
 			<span class="duration"><input type="name" maxlength="4" placeholder="yyyy" class="years"> - <input type="name" maxlength="4" placeholder="yyyy" class="years"></span>
@@ -370,7 +393,7 @@ h2 {
 
 	</ul>
 </section>
-<section class="Experience"><h2>Eksperieca</h2>
+<section class="Experience"><h2>Eksperieca</h2><br>
 	<ul class="timeLine">
 		<li class="event">
 			<span class="duration"><input type="name" maxlength="4" placeholder="yyyy" class="years"> - <input type="name" maxlength="4" placeholder="yyyy" class="years"></span>
