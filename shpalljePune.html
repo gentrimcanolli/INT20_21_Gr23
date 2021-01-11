@@ -1,118 +1,90 @@
 <!DOCTYPE html>
 <html>
 	<head>
-		 <link rel="stylesheet" href="stylee.css">
-		 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+		<meta charset="utf-8">
+		<title>Find your ideal Job</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+		<link rel="stylesheet" type="text/css" href="navFooter.css">
+		<link rel="stylesheet" href="stylee.css">
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+		<script src="script.js"></script>
 	</head>
 
-	<body>
+	<body onload="makeList()" id="body">
 
-		<h1>Shpallje Pune</h1>
+		<header>
+		  <nav>
+		    <input id="nav-toggle" type="checkbox">
+		    <div class="logo">Find your ideal job</div>
+		    <ul class="links">
+		      <li><a href="#home">Kryefaqja</a></li>
+		      <li><a href="#cv">Krijo CV</a></li>
+		      <li><a href="#quiz">Kuiz</a></li>
+		      <li><a href="#Shpallje">Shpallje</a></li>
+		      <li><a href="#keshilla">K&eumlshilla</a></li>
+		      <li><a href="#aboutus">Rreth nesh</a></li>
+		    </ul>
+		    <label for="nav-toggle" class="icon-burger">
+		      <div class="line"></div>
+		      <div class="line"></div>
+		      <div class="line"></div>
+		    </label>
+		  </nav>
+		</header>
 
 		<div class="header">
 		    <input type="text" id="fIndustria" name="fIndustria" size="30" placeholder="Industria">
 		    <input type="text" id="fLokacioni" name="fLokacioni" size="30" placeholder="Lokacioni">
-		    <div class="search-icon"><i class="fa fa-search"></i></div>
+		    <div class="search-icon" ><i class="fa fa-search"></i></div>
 		</div>
-
-		<div class="body">
+		<div class="body" >
 			<h1>Premium</h1>
-			<div class="card-container">
-				<div class="card">
-				  <img src="https://logos-world.net/wp-content/uploads/2020/05/Zara-Logo.png" style="width:100%">
-				  	<div class="container">
-					    <h4><b>Lokacioni</b></h4> 
-					    <p>Prishtin&euml;</p> 
-				  	</div>
-				    <div class="container">
-				    	<h4><b>Kategoria</b></h4> 
-				    	<p>&bull; Shit&euml;se</p> 
-				  	</div>
-				    <div class="container">
-					    <h4><b>Statusi</b></h4> 
-					    <p>&check; Full Time</p> 
-				  </div>
-				</div>
-				<div class="card">
-				  <img src="https://www.businesstimes.com.sg/sites/default/files/styles/large_popup/public/image/2016/09/20/32326829%20-%2001_08_2014%20-%20vcnation06C.jpg?itok=CGg7Oy0V" style="width:80%">
-				  	<div class="container">
-					    <h4><b>Lokacioni</b></h4> 
-					    <p>Fush&euml; Kosov&euml;</p> 
-				  	</div>
-				    <div class="container">
-				    	<h4><b>Kategoria</b></h4> 
-				    	<p>&bull; Shit&euml;s/e</p> 
-				  	</div>
-				    <div class="container">
-					    <h4><b>Statusi</b></h4> 
-					    <p>&check; Full Time</p> 
-				  </div>
-				</div>
-				<div class="card">
-				  <img src="https://fn24.news/img/directory/1554548355_Screen%20Shot%202019-04-06%20at%2011.57.11.png" style="width:100%">
-				  	<div class="container">
-					    <h4><b>Lokacioni</b></h4> 
-					    <p>Prishtin&euml;</p> 
-				  	</div>
-				    <div class="container">
-				    	<h4><b>Kategoria</b></h4> 
-				    	<p>&bull; Estetik&euml;se</p> 
-				  	</div>
-				    <div class="container">
-					    <h4><b>Statusi</b></h4> 
-					    <p>&check; Full Time</p> 
-				  </div>
-				</div>
-			</div>
-			<div class="card-container">
-				<div class="card">
-				  <img src="https://karriera.live/wp-content/uploads/2020/06/page_1.jpg" style="width:85%">
-				  	<div class="container">
-					    <h4><b>Lokacioni</b></h4> 
-					    <p>Lipjan&euml;</p> 
-				  	</div>
-				    <div class="container">
-				    	<h4><b>Kategoria</b></h4> 
-				    	<p>&bull; Gastronomi</p> 
-				  	</div>
-				    <div class="container">
-					    <h4><b>Statusi</b></h4> 
-					    <p>&check; Full Time</p> 
-				  </div>
-				</div>
-				<div class="card">
-				  <img src="https://www.punsohu.eu/images/company/konstruktori-ing-1969-1574062900.png" style="width:100%">
-				  	<div class="container">
-					    <h4><b>Lokacioni</b></h4> 
-					    <p>Podujev&euml;</p> 
-				  	</div>
-				    <div class="container">
-				    	<h4><b>Kategoria</b></h4> 
-				    	<p>&bull; Nd&euml;rtimatari</p> 
-				  	</div>
-				    <div class="container">
-					    <h4><b>Statusi</b></h4> 
-					    <p>&check; Full Time</p> 
-				  </div>
-				</div>
-				<div class="card">
-				  <img src="https://www.neptun.mk//content/images/logo-modal.jpg" style="width:100%">
-				  	<div class="container">
-					    <h4><b>Lokacioni</b></h4> 
-					    <p>Ferizaj</p> 
-				  	</div>
-				    <div class="container">
-				    	<h4><b>Kategoria</b></h4> 
-				    	<p>&bull; Shit&euml;s</p> 
-				  	</div>
-				    <div class="container">
-					    <h4><b>Statusi</b></h4> 
-					    <p>&check; Full Time</p> 
-				  </div>
-				</div>
-			</div>
+			<!-- <a href="Details.html"> -->
+			<div class="card-container" id="card-container"></div>
+		</a>
 		</div>
-		
+		<footer class="footer">
+		    <div class="footer-left">
+		      <img src="images/logo1.png" alt="logo">
+
+		      <p>Na ndiqni n&euml rrjete sociale</p>
+		      <br>
+		      <div class="socials">
+		        <a href="https://www.facebook.com/UniversitetiPrishtines"><i class="fa fa-facebook"></i></a>
+		        <a href="https://www.instagram.com/uni.pr/"><i class="fa fa-instagram"></i></a>
+		        <a href="https://www.uni-pr.edu/"><i class="fa fa-google"></i></a>
+		      </div>
+	    	</div>
+		    <ul class="footer-right">
+			    <li class="features">
+				    <h2>Linqet</h2>
+
+			        <ul class="box">
+			          <li> <a href="#">Kryefaqja</a> </li>
+			          <li> <a href="#">Krijo CV</a> </li>
+			          <li> <a href="#">Kuiz</a> </li>
+			          <li> <a href="#">Shpallje</a> </li>
+			          <li> <a href="#">K&eumlshilla</a> </li>
+			        </ul>
+		      	</li>
+
+			    <li class="features">
+			        <h2>Na Kontakto</h2>
+
+			        <ul class="box">
+			          <li> <a
+			              href="https://www.google.com/maps/place/Universiteti+i+Prishtin%C3%ABs/@42.6484076,21.1665845,19z/data=!3m1!4b1!4m12!1m6!3m5!1s0x13549ec1b5430613:0x76c9353194f18686!2sUniversiteti+i+Prishtin%C3%ABs!8m2!3d42.6484076!4d21.1671317!3m4!1s0x13549ec1b5430613:0x76c9353194f18686!8m2!3d42.6484076!4d21.1671317">Rr.
+			              "George Bush", Nr.31, 10 000 Prishtinë, Republika e Kosovës</a></li>
+			          <li> <a href="https://contacts.google.com/">Tel: +38345463922</a> </li>
+			         <li> <a href="mailto:gentrim.canolli@student.uni-pr.edu">Email: gentrim.canolli@student.uni-pr.edu</a></li>
+			        </ul>
+			    </li>
+	    	</ul>
+		    <div class="footer-bottom">
+		      <p>All Rights Reserved By &copy; UP-students 2021</p>
+		    </div>
+	    </footer>	
 	</body>
 </html>
 
