@@ -6,13 +6,12 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
 		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 		<link rel="stylesheet" type="text/css" href="navFooter.css">
-		<link rel="stylesheet" href="stylee.css">
-		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-		<script src="script.js"></script>
+		<link rel="stylesheet" href="Details.css">
+		<script src="Details.js"></script>
+
 	</head>
 
 	<body onload="makeList()" id="body">
-
 		<header>
 		  <nav>
 		    <input id="nav-toggle" type="checkbox">
@@ -33,16 +32,49 @@
 		  </nav>
 		</header>
 
-		<div class="header">
-		    <input type="text" id="fIndustria" name="fIndustria" size="30" placeholder="Industria">
-		    <input type="text" id="fLokacioni" name="fLokacioni" size="30" placeholder="Lokacioni">
-		    <div class="search-icon" ><i class="fa fa-search"></i></div>
-		</div>
-		<div class="body" >
-			<h1>Premium</h1>
 
-			<div class="card-container" id="card-container"></div>	
+
+		<div class="cover-container">
+			<div class="conatiner-1">
+				<div class="logo-container">
+					<img id="itemImage" style="height:150px; width: 150px; object-fit: contain;"/>
+				</div>
+				<div class="details-container">
+					<h1 id="itemCategory" style="margin-bottom:20px">
+					</h1>
+					<div>
+					<a id="itemName" class="details-container1">
+						<i class="fa fa-building" style="color: green;">
+						</i>
+					</a>
+					<a id="itemLocation" class="details-container1">
+						<i class="fa fa-map-marker" style="color: green;">
+
+						</i>
+					</a>
+					<a class="details-container1">
+						<i class="fa fa-clock-o" style="color: green;">
+
+						</i>
+						Full Time
+					</a>
+				 </div>
+				</div>
+				
+			</div>
 		</div>
+
+		<div class="body">
+			<div class="div">
+					<h3>Përshkrimi:</h3>
+					<p></p>
+					<div class="div1">
+						<div class="body-container" id="body-container">	
+					</div>
+				</div>
+			</div>
+		</div>
+
 		<footer class="footer">
 		    <div class="footer-left">
 		      <img src="images/logo1.png" alt="logo">
@@ -83,7 +115,6 @@
 		    <div class="footer-bottom">
 		      <p>All Rights Reserved By &copy; UP-students 2021</p>
 		    </div>
-	    </footer>	
+	    </footer> 
 	</body>
 </html>
-

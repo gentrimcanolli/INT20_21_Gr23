@@ -1,0 +1,66 @@
+.body-container{
+	margin:100px;
+}
+.body{
+	background-color: aliceblue;
+	padding: 70px;
+}
+
+.cardWrapper{
+	font-family:courier;
+  	text-align: start;
+  	letter-spacing: 3px;
+}
+.cover-container{
+	height: 250px;
+    background: cadetblue;
+	margin-top:70px;
+	display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.logo-container{
+	background-color: white;
+	border-radius: 10px;
+    display: flex;
+    align-items: center;
+    margin-right: 30px;
+
+}
+.details-container{
+	display: flex;
+	flex-direction: column;
+	color:white;
+}
+.conatiner-1{
+	display: flex;
+	flex-wrap: nowrap;
+}
+.details-container1{
+	color: black;
+    background: white;
+    border-radius: 5px;
+    padding: 5px;
+    padding-left: 20px;
+    padding-right: 20px;
+    width: fit-content;
+    margin-right: 20px;
+}
+.div{
+	padding: 10px;
+	background-color: white;
+	border-radius: 15px;
+	margin-top: 20px;
+    margin-right: 100px;
+    margin-left: 100px;
+}
+.div1{
+	margin-bottom: 20px;
+    margin-right: 20px;
+    margin-left: 20px;
+}
+h3 {
+	margin-top: 30px;
+	text-align: center;
+	text-transform: uppercase;
+}

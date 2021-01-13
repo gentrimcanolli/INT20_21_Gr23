@@ -3,17 +3,17 @@ function makeList() {
     let listData = [
     {
         imgSrc:'images/zara_logo.png',
-        location: "Prishtin&euml;",
-        category: "Asistent/e t&euml; shitjes"
+        location: "Prishtinë",
+        category: "Asistent/e të shitjes"
     },
     {
         imgSrc:'images/aztech_logo.png',
-        location: "Fush&euml; Kosov&euml;",
-        category: "Shit&euml;s/e"
+        location: "Fushë Kosovë",
+        category: "Shitës/e"
     },
     {
         imgSrc:'images/besa_security_logo.png',
-        location: "Pej&euml;",
+        location: "Pejë",
         category: "Sigurim"
     },
     {
@@ -23,13 +23,13 @@ function makeList() {
     },
     {
         imgSrc:'images/konstruktori_ing_logo.png',
-        location: "Podujev&euml;",
-        category: "Nd&euml;rtimtari"
+        location: "Podujevë",
+        category: "Ndërtimtari"
     },
     {
         imgSrc:'images/neptun_logo.png',
         location: "Ferizaj",
-        category: "Shit&euml;s/e"
+        category: "Shitës/e"
     }   
     ],
  
@@ -39,15 +39,22 @@ function makeList() {
     i;
 
     // Add it to the page
-
-    for (i = 0; i < numberOfListItems; ++i) {
+  var g = document.getElementById('card-container');
+    for (let i = 0; i < numberOfListItems; i++) {
         // create an item for each one
         card = document.createElement('div');
         cardWrapper = document.createElement('div');
         cardWrapper.appendChild(card);
         card.className += "card";
         cardWrapper.className += "cardWrapper";
-
+      /*  document.getElementById("card-container").onclick = function () {
+        localStorage.setItem("item",i);
+        localStorage.setItem("imgSrc", listData[i]['imgSrc']);
+        localStorage.setItem("location", listData[i]['location']);
+        localStorage.setItem("category", listData[i]['category']);
+        window.open("Details.html", "_self");
+    };*/
+         
 
         img = document.createElement('img');
         img.src = listData[i]['imgSrc'];
@@ -77,7 +84,15 @@ function makeList() {
 
         
         document.getElementById('card-container').appendChild(cardWrapper);
-
+         (function(index){
+        g.children[i].onclick = function(){
+        localStorage.setItem("item",index);
+        localStorage.setItem("imgSrc", listData[index]['imgSrc']);
+        localStorage.setItem("location", listData[index]['location']);
+        localStorage.setItem("category", listData[index]['category']);
+        window.open("Details.html", "_self");
+        }    
+        })(i);
     }
 }
 
