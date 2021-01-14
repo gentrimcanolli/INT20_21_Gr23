@@ -29,6 +29,7 @@ nav .logo {
 
 nav .logo:hover {
   color: rgba(82, 156, 238, 1);
+  transform: rotateX(20deg);
 }
 
 nav .links {
@@ -80,6 +81,7 @@ nav .icon-burger .line {
 
 nav .links a:hover {
   color: rgba(82, 156, 238, 1);
+  transform: rotateY(20deg);
 }
 
 @media screen and (max-width: 820px) {
@@ -318,7 +320,7 @@ h2 {
 
 .styled-table {
   border-collapse: collapse;
-  margin: 100px 25px 25px 25px;
+  margin: 50px 25px;
   font-size: 0.9em;
   font-family: sans-serif;
   min-width: 400px;
@@ -359,7 +361,7 @@ h2 {
 }
 
 .intervista1 {
-  margin: 100px 25px 25px 25px;
+  margin: 100px 25px;
 }
 
 .intervista1 h1 {
@@ -369,6 +371,7 @@ h2 {
   padding: 10px;
   border-radius: 5px;
   font-family: sans-serif;
+  resize: none;
 }
 
 .inimg {
@@ -379,7 +382,7 @@ h2 {
 }
 
 .intervista2 {
-  margin: 100px 25px 25px 25px;
+  margin: 50px 25px 25px 25px;
 }
 
 .intervista2 h1 {
@@ -396,8 +399,8 @@ h2 {
 }
 
 .video1 h4 {
-  background: rgba(21, 134, 189, 1);
-  color: white;
+  border-bottom: 1px solid rgba(52, 118, 238, 1);
+  color: rgba(21, 134, 189, 1);
   margin-bottom: 10px;
   padding: 10px;
   border-radius: 5px;
@@ -405,5 +408,74 @@ h2 {
   margin-left: 25px;
   margin-right: 25px;
   text-align: center;
-  font-size: 20px;
+  font-size: 15px;
 }
+
+.video2 h4 {
+  border-bottom: 1px solid rgba(52, 118, 238, 1);
+  color: rgba(21, 134, 189, 1);
+  margin-bottom: 10px;
+  padding: 10px;
+  border-radius: 5px;
+  font-family: sans-serif;
+  margin-left: 25px;
+  margin-right: 25px;
+  text-align: center;
+  font-size: 15px;
+}
+
+@font-face {
+  font-family: "Bitstream Vera Serif Bold";
+  src: url("https://mdn.mozillademos.org/files/2468/VeraSeBd.ttf");
+}
+
+#dl1 {
+  text-align: center;
+  font-family: "Bitstream Vera Serif Bold";
+  outline-offset: 1px;
+  outline-style: dashed;
+  font-size: 12px;
+}
+
+#leftBox, #middleBox, #rightBox {
+  border: 6px solid #5183BE;
+  border-style: ridge;
+  margin: 10px;
+  padding: 10px;
+  height: 350px;
+  width: 230px;
+  text-align: center;
+  border-radius: 5px;
+  background-color: #E1E5F3;
+}
+
+#dragDrop {
+  border-bottom: 1px solid rgba(52, 118, 238, 1);
+  color: rgba(21, 134, 189, 1);
+  margin-bottom: 10px;
+  padding: 10px;
+  border-radius: 5px;
+  font-family: sans-serif;
+  margin-left: 25px;
+  margin-right: 25px;
+  text-align: center;
+  font-size: 15px;
+}
+
+.drop {
+  display: flex;
+  justify-content: center;
+}
+
+@media screen and (max-width:700px) {
+  .drop {
+    font-size: 12.5px;
+  }
+
+  #veshje {
+    justify-content: center;
+  }
+
+  .svgCanvas svg, canvas {
+    margin-top: 20px;
+  }
