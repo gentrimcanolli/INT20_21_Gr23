@@ -16,7 +16,7 @@
       <input id="nav-toggle" type="checkbox">
       <div class="logo">Find your ideal job</div>
       <ul class="links">
-        <li><a href="#home">Kryefaqja</a></li>
+        <li><a href="projekti.html">Kryefaqja</a></li>
         <li><a href="#cv">Krijo CV</a></li>
         <li><a href="#quiz">Kuiz</a></li>
         <li><a href="#Shpallje">Shpallje</a></li>
@@ -46,11 +46,12 @@
       do të dilni më mirë.
     </p>
   </div>
+  <hr>
 
   <div class="intervista2">
     <h1>Si duhet t&euml visheni n&euml nj&euml intervist&euml pune </h1>
     <figure>
-      <img id="inimg2" src="img/interview2.png" alt="veshje">
+      <img src="img/interview2.png" alt="veshje" width="100%" id="veshje">
       <figcaption> <mark style="background: rgba(21, 134, 189, 1); color:white;">Disa lloje t&euml veshjeve</mark></figcaption>
     </figure>
     <br>
@@ -81,8 +82,7 @@
       </ol>
     </div>
   </div>
-
-
+  <hr>
   <table class=" styled-table">
     <thead>
       <tr>
@@ -156,15 +156,124 @@
       </tr>
     </tbody>
   </table>
+  <hr>
 
-  <div class="video1">
+  <div class="video1" style="margin:25px">
     <h4>Si t&euml krijosh CV</h4>
     <video src="CVvideo.mp4" width="100%" controls></video>
+    <dl id="dl1">
+      <dd>Kjo video &eumlsht&euml marr&euml nga YouTube</dd>
+    </dl>
   </div>
+
+  <div class="video2" style="margin:25px">
+    <h4>Zgjedhja e karrier&eumls</h4>
+    <video src="career.mp4" width="100%;" controls></video>
+    <dl id="dl1">
+      <dd>Kjo video &eumlsht&euml marr&euml nga YouTube</dd>
+    </dl>
+  </div>
+  <hr>
+
+
+  <h2 id="dragDrop">&#199;far&euml ke m&eumlsuar nga k&eumlshillat tona?</h2>
+  <div class="drop">
+
+
+    <div id="leftBox" ondragstart="dragStart(event)" ondragover="allowDrop(event)" ondrop="dropped(event)">
+      <b> Në rregull</b><br>
+      <hr>
+    </div>
+
+    <div id="middleBox" ondragstart="dragStart(event)">
+      <b> Vendos fjalitë në vendin e duhur</b>
+      <hr>
+      <section class="words"><br><br>
+        <section id="word1" draggable="true">Bëhu konfident, por jo i butë</section><br><br>
+        <section id="word2" draggable="true">Të mbroni konfidencialitetin e "sekreteve" të punëdhënësit tuaj aktual</section><br><br>
+        <section id="word3" draggable="true">Flit për problemet e tua personale</section><br><br>
+        <section id="word4" draggable="true">Përqendrohuni vetëm te ju</section>
+    </div>
+
+    <div id="rightBox" ondragstart="dragStart(event)" ondragover="allowDrop(event)" ondrop="dropped(event)">
+      <b> Nuk është në rregull<b>
+          <hr>
+    </div>
+  </div>
+
+  <script>
+    var words = ["word1", "word2", "word3", "word4"];
+    var right = ["word1", "word2"];
+    var wrong = ["word3", "word4"];
+
+    function dragStart(ev) {
+      ev.dataTransfer.setData("text", ev.target.id);
+    }
+
+    function dropped(ev) {
+      ev.preventDefault();
+      var data = ev.dataTransfer.getData("text");
+      var dataEl = document.getElementById(data);
+      var test = ev.target.appendChild(dataEl);
+      if (ev.target.id == "leftBox") {
+        if (data == right[0] || data == right[1]) {
+          dataEl.style.color = "green";
+        } else {
+          dataEl.style.color = "red";
+        }
+      } else {
+        if (data == wrong[0] || data == wrong[1]) {
+          dataEl.style.color = "green";
+        } else {
+          dataEl.style.color = "red";
+        }
+      }
+    }
+
+    function allowDrop(ev) {
+      ev.preventDefault();
+    }
+  </script>
+
+  <svg width="30" height="30">
+    <circle r="10" cx="15" cy="15" width="60" height="60" style="fill:#33D5FF ;stroke:black;stroke-width:5;opacity:0.7; margin-left: 25px;" />
+  </svg>
+  <svg width="30" height="30">
+    <rect x="0" y="0" rx="0" ry="0" width="60" height="60" style="fill:#33D5FF ;stroke:black;stroke-width:5;opacity:0.7; margin-left: 25px;" />
+  </svg>
+  <svg width="30" height="30">
+    <circle r="10" cx="15" cy="15" width="60" height="60" style="fill:#33D5FF ;stroke:black;stroke-width:5;opacity:0.7; margin-left: 25px;" />
+  </svg>
+  <canvas id="myCanvas" width="30" height="30" style="border:1px solid grey;"></canvas>
+  <svg width="30" height="30">
+    <circle r="10" cx="15" cy="15" width="60" height="60" style="fill:#33D5FF ;stroke:black;stroke-width:5;opacity:0.7; margin-left: 25px;" />
+  </svg>
+  <svg width="30" height="30">
+    <rect x="0" y="0" rx="0" ry="0" width="60" height="60" style="fill:#33D5FF ;stroke:black;stroke-width:5;opacity:0.7; margin-left: 25px;" />
+  </svg>
+  <svg width="30" height="30">
+    <circle r="10" cx="15" cy="15" width="60" height="60" style="fill:#33D5FF ;stroke:black;stroke-width:5;opacity:0.7; margin-left: 25px;" />
+  </svg>
+
+  <script>
+    var canvas = document.getElementById("myCanvas");
+    var ctx = canvas.getContext("2d");
+    ctx.beginPath();
+    ctx.moveTo(10, 0);
+    ctx.lineTo(20, 0);
+    ctx.lineTo(15, 10);
+    ctx.fill();
+    ctx.font = "px Arial";
+    ctx.fillText("footer", 2, 30);
+  </script>
+
+
+
+
 
   <footer class="footer">
     <div class="footer-left">
-      <img src="img/logo1.png" alt="logo">
+      <img id="imgF" src="img/logo1.png" alt="logo">
       <p>Na ndiqni n&euml rrjete sociale</p>
       <br>
       <div class="socials">
@@ -195,17 +304,13 @@
               "George Bush", Nr.31, 10 000 Prishtinë, Republika e Kosovës</a></li>
           <li> <a href="https://contacts.google.com/">Tel: +38345463922</a> </li>
           <li> <a href="mailto:gentrim.canolli@student.uni-pr.edu">Email: gentrim.canolli@student.uni-pr.edu</a> </li>
-
         </ul>
       </li>
-
     </ul>
     <div class="footer-bottom">
       <p>All Rights Reserved By &copy; UP-students 2021</p>
     </div>
   </footer>
-
-
 </body>
 
 </html>
