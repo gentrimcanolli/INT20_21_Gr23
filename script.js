@@ -1,40 +1,62 @@
-function makeList() {
-    // Establish the array which acts as a data source for the list
-    let listData = [
+let listData = [
     {
         imgSrc:'images/zara_logo.png',
         location: "Prishtinë",
-        category: "Asistent/e të shitjes"
+        category: "Asistent/e të shitjes",
+        name: "Zara"
     },
     {
         imgSrc:'images/aztech_logo.png',
         location: "Fushë Kosovë",
-        category: "Shitës/e"
+        category: "Shitës/e",
+        name: "aztech"
     },
     {
         imgSrc:'images/besa_security_logo.png',
         location: "Pejë",
-        category: "Sigurim"
+        category: "Sigurim",
+        name: "besa security"
     },
     {
         imgSrc:'images/sach_pizza_logo.png',
         location: "Lipjan",
-        category: "Gastronomi"
+        category: "Gastronomi",
+        name: "sach pizza"
     },
     {
         imgSrc:'images/konstruktori_ing_logo.png',
         location: "Podujevë",
-        category: "Ndërtimtari"
+        category: "Ndërtimtari",
+        name: "konstruktori ing"
     },
     {
         imgSrc:'images/neptun_logo.png',
         location: "Ferizaj",
-        category: "Shitës/e"
+        category: "Shitës/e",
+        name: "neptun"
     }   
-    ],
+    ];
+    function search2(){
+    let key = document.getElementById("Location-Category").value;
+
+    let filtredArray;
+    filtredArray = listData.filter(el => el.location.toLowerCase().includes(key.toLowerCase()) || el.category.toLowerCase().includes(key.toLowerCase()) || el.name.toLowerCase().includes(key.toLowerCase()));
+    
+    
+   
+    document.getElementById('card-container').innerHTML ="";
+
+    makeList(filtredArray);
+}
+function initList(){
+    makeList(listData);
+}
+function makeList(listArray) {
+    // Establish the array which acts as a data source for the list
+    
  
     // Set up a loop that goes through the items in listItems one at a time
-    numberOfListItems = listData.length,
+    let numberOfListItems = listArray.length,
     listItem,
     i;
 
@@ -47,17 +69,11 @@ function makeList() {
         cardWrapper.appendChild(card);
         card.className += "card";
         cardWrapper.className += "cardWrapper";
-      /*  document.getElementById("card-container").onclick = function () {
-        localStorage.setItem("item",i);
-        localStorage.setItem("imgSrc", listData[i]['imgSrc']);
-        localStorage.setItem("location", listData[i]['location']);
-        localStorage.setItem("category", listData[i]['category']);
-        window.open("Details.html", "_self");
-    };*/
+
          
 
         img = document.createElement('img');
-        img.src = listData[i]['imgSrc'];
+        img.src = listArray[i]['imgSrc'];
         img.style.height='150px';
         img.style.width='150px';
         img.style.objectFit='contain';
@@ -68,12 +84,12 @@ function makeList() {
         container.className += "container";
 
         heading = document.createElement('h4');
-        heading.innerHTML = listData[i]['category'];
+        heading.innerHTML = listArray[i]['category'];
         heading.style.color='black';
         heading.style.textDecoration='none'; 
 
         paragraph = document.createElement('p');
-        paragraph.innerHTML = listData[i]['location'];
+        paragraph.innerHTML = listArray[i]['location'];
         paragraph.style.color='black';
 
         container.appendChild(heading);
@@ -87,12 +103,15 @@ function makeList() {
          (function(index){
         g.children[i].onclick = function(){
         localStorage.setItem("item",index);
-        localStorage.setItem("imgSrc", listData[index]['imgSrc']);
-        localStorage.setItem("location", listData[index]['location']);
-        localStorage.setItem("category", listData[index]['category']);
+        localStorage.setItem("imgSrc", listArray[index]['imgSrc']);
+        localStorage.setItem("location", listArray[index]['location']);
+        localStorage.setItem("category", listArray[index]['category']);
         window.open("Details.html", "_self");
         }    
         })(i);
     }
 }
+
+
+
 
