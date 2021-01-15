@@ -13,7 +13,7 @@ function sumPoints() {
     }
 
     var pointsDisplay = document.createElement("h2");
-    var text = document.createTextNode("Ju keni: " + sum + " pike.");
+    var text = document.createTextNode("Totali i pikëve: " + sum + " pikë.");
     pointsDisplay.appendChild(text);
     var position = document.getElementById("displayPoints");
     position.appendChild(pointsDisplay);
@@ -37,6 +37,30 @@ console.log(sum);
 document.addEventListener('submit', function(event) {
     event.preventDefault();
 });
+
+
+const init = function(){
+	document.getElementById('button-cancel').addEventListener('click', reset);
+}
+const reset = function(){
+	ec.preventDefault();
+	document.getElementById('form-user').reset();
+}
+document.addEventListener('DOMContentLoaded', init);
+
+
+const signUpButton = document.getElementById('signUp');
+const signInButton = document.getElementById('signIn');
+const container = document.getElementById('container');
+
+signUpButton.addEventListener('click', () => {
+	container.classList.add("right-panel-active");
+});
+
+signInButton.addEventListener('click', () => {
+	container.classList.remove("right-panel-active");
+});
+
 
 
 
