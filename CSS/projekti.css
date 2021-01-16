@@ -1,6 +1,7 @@
 body {
-  background-repeat: repeat;
-  background-position: cover;
+  background-origin: border-box;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
 }
 
 * {
@@ -36,6 +37,7 @@ nav .logo {
 
 nav .logo:hover {
   color: rgba(82, 156, 238, 1);
+  transform: rotateX(20deg);
 }
 
 nav .links {
@@ -87,6 +89,7 @@ nav .icon-burger .line {
 
 nav .links a:hover {
   color: rgba(82, 156, 238, 1);
+  transform: rotateY(20deg);
 }
 
 [data-component="slideshow"] .slide {
@@ -538,7 +541,7 @@ h2 {
 }
 
 .Profesionet {
-  margin: 20px;
+  margin: 30px 70px;
   padding: 20px;
   background: #006A97;
   border-radius: 10px;
@@ -547,7 +550,7 @@ h2 {
 .puna1 {
   background: white;
   border-radius: 10px;
-  margin: 5px;
+  margin: 1px;
   padding: 0px 5px;
 }
 
@@ -565,4 +568,79 @@ h2 {
 
 .puna1 p {
   padding: 0px 20px 20px 20px;
+}
+
+.styled-table {
+  border-collapse: collapse;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 25px;
+  font-size: 0.9em;
+  font-family: sans-serif;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
+  overflow-x: auto;
+  column-count: 4;
+}
+
+.styled-table thead tr {
+  background-color: rgba(21, 134, 189, 1);
+  color: #ffffff;
+  text-align: left;
+}
+
+.styled-table th,
+.styled-table td {
+  padding: 12px 15px;
+}
+
+.styled-table th {
+  width: 200px;
+}
+
+.styled-table tbody tr {
+  border-bottom: 1px solid #dddddd;
+}
+
+.styled-table tbody tr:nth-of-type(even) {
+  background-color: #f3f3f3;
+}
+
+.styled-table tbody tr:nth-of-type(odd) {
+  background-color: rgba(188, 197, 213, 1);
+}
+
+.styled-table tbody tr:last-of-type {
+  border-bottom: 2px solid rgba(21, 134, 189, 1);
+}
+
+.buttonFS {
+  text-align: center;
+}
+
+#buttonF, #buttonS {
+  background-color: #006A97;
+  border: none;
+  border-radius: 5px;
+  padding: 5px;
+  margin-top: 5px;
+  color: white;
+}
+
+.statistika {
+  margin-top: 70px;
+}
+
+.kontakti {
+  text-align: center;
+}
+
+#kontaktiInput {
+  height: 50px;
+  width: 350px;
+  border-radius: 5px;
+  background-color: #006A97;
+  border: none;
+  cursor: pointer;
+  color: white;
+  box-shadow: 0 5px 5px 5px rgba(115, 193, 255, 0.1);
 }
