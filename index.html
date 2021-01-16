@@ -323,16 +323,18 @@
     <button type="button" id="buttonF">Fsheh tabelat</button>
     <button type="button" id="buttonS">Shfaq tabelat</button>
   </div>
-  <script>
+
+    <script>
     $(document).ready(function() {
       $("#buttonF").click(function() {
-        $(".styled-table").hide();
+        $(".styled-table").hide("slow");
       });
       $("#buttonS").click(function() {
-        $(".styled-table").show();
+        $(".styled-table").show("slow");
       });
     });
   </script>
+
 
   <script>
     $(document).ready(function() {
