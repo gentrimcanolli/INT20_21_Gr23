@@ -23,6 +23,7 @@ h2{
 	border-bottom: 1px solid #888;
 	padding: 0.75rem 0;
 	margin-bottom: 2rem;
+	color: #6BA6BF;
 }
 h3{
 	font-size: 1rem;
@@ -153,7 +154,7 @@ grid-gap: 1rem;
 }
 .btn{
 
-	border: 2.3px solid #A0CDE0;
+	border: 2.3px solid #4B8EAA;
 	background: none;
 	padding: 10px 20px;
     font-size: 20px;
@@ -166,7 +167,7 @@ grid-gap: 1rem;
     border-radius: 10px;
 }
 .btn1{
-	color: #A0CDE0;
+	color: #4B8EAA;
 
 }
 .btn1:hover{
@@ -179,7 +180,7 @@ color: #fff;
 	left: 0;
 	width: 100%;
 	height: 0%;
-	background: #A0CDE0;
+	background: #4B8EAA;
 	z-index: -1;
      transition: 0.8s;
 }
