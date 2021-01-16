@@ -1,5 +1,6 @@
 .body-container{
 	margin:100px;
+
 }
 .body{
 	background-color: aliceblue;
@@ -21,6 +22,9 @@
 	display: flex;
     justify-content: center;
     align-items: center;
+    @media scree and (max-width: 1200px;) and (min-width: 480px;){
+    background-color: lightblue;
+  }
 }
 .logo-container{
 	background-color: white;
