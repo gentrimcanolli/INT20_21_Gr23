@@ -3,10 +3,11 @@
 
 <head>
   <meta charset="utf-8">
-  <title>Find your ideal Job</title>
+  <title>Puna ime ideale</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
   <link rel="stylesheet" type="text/css" href="CSS/projekti.css">
+  <script src="jquery-3.5.1.min.js"></script>
 
 </head>
 <style media="screen">
@@ -60,15 +61,16 @@
 </style>
 
 <body>
+
   <nav>
     <input id="nav-toggle" type="checkbox">
-    <div class="logo">Find your ideal job</div>
+    <div class="logo">Puna ime ideale</div>
     <ul class="links">
-      <li><a href="#home">Kryefaqja</a></li>
-      <li><a href="#cv" target="_blank">Krijo CV</a></li>
-      <li><a href="#quiz" target="_blank">Kuiz</a></li>
-      <li><a href="#Shpallje">Shpallje</a></li>
-      <li><a href="#keshilla">K&eumlshilla</a></li>
+      <li><a href="index.html">Kryefaqja</a></li>
+      <li><a href="cv.html" target="_blank">Krijo CV</a></li>
+      <li><a href="quiz.html" target="_blank">Kuiz</a></li>
+      <li><a href="shpalljePune.html">Shpallje</a></li>
+      <li><a href="keshilla.html">K&eumlshilla</a></li>
       <li><a href="#aboutus">Rreth nesh</a></li>
     </ul>
     <label for="nav-toggle" class="icon-burger">
@@ -83,7 +85,7 @@
     <div class="myslide fade">
       <div class="txt">
         <h1>Krijo CV</h1>
-        <p>Krijo CV-n<br> t&eumlnde tani</p>
+        <p>Krijo CV-n t&eumlnde tani</p>
       </div>
       <img src="img/CV.jpg" style="width: 100%; height: 100%;">
     </div>
@@ -98,7 +100,7 @@
     <div class="myslide fade">
       <div class="txt">
         <h1>Shpallje</h1>
-        <p>K&eumlrkon/ofron pun&euml<br>Shiko shpalljet</p>
+        <p>K&eumlrkon pun&euml<br>Shiko shpalljet</p>
       </div>
       <img src="img/img3.jpg" style="width: 100%; height: 100%;">
     </div>
@@ -106,7 +108,7 @@
     <div class="myslide fade">
       <div class="txt">
         <h1>K&eumlshilla</h1>
-        <p>Nuk ke punuar asnj&eumlher&euml<br>M&eumlso si t&euml krijosh CV, si t&euml jap&eumlsh intervist&euml pune etj...</p>
+        <p>Nuk ke punuar asnj&eumlher&euml<br>M&eumlso shum&eumlçka rreth intervistave t&euml pun&eumls etj...</p>
       </div>
       <img src="img/img1.jpg" style="width: 100%; height: 100%;">
     </div>
@@ -134,7 +136,7 @@
 
     <article class="puna1">
       <h2 id="punet">Tekonlogjia Informative</h2><br>
-      <p> <abbr title="Inforamtion Technology">IT</abbr>-ja është një nga industritë më të fuqishme aktuale në botë, e cila ka lulëzuar falë zhvillimit të shpejtë të sektorit të kibernetikës. Sektori i IT në të shumtën e rasteve është në duart e të
+      <p> <abbr title="Information Technology">IT</abbr>-ja është një nga industritë më të fuqishme aktuale në botë, e cila ka lulëzuar falë zhvillimit të shpejtë të sektorit të kibernetikës. Sektori i IT në të shumtën e rasteve është në duart e të
         rinjve. Andaj, Kosova ka një potencial unik për ta zhvilluar edhe më tej këtë fushë. Profesionistët e IT-së punojnë në disa lëmi, si: dizajnimi i softuerëve për institucione të ndryshme, universitete, kompani private, banka, kompani të
         sigurimit; dizajnim dhe mirëmbajtje të uebfaqeve, komunikim me njerëzit, etj. Nevoja për ekspertë të IT-së në Kosovë pritet të rritet për shkak të progresit teknologjik që Kosova do të ketë si rezultat i numrit në rritje të kompanive operuese
         vendore.
@@ -165,6 +167,187 @@
 
   </article>
 
+  <div class="statistika">
+    <table class="styled-table">
+      <thead>
+        <th>Statistika rreth pagave n&euml Kosov&euml</th>
+      </thead>
+      <tbody>
+        <tr>
+          <td>Statistika rreth pagave n&euml Kosov&euml baz&euml: profesionit, shkall&eumls arsimore etj. <br> (ME R&EumlND&EumlSI : t&euml gjitha statistikat jan&euml marr&euml nga https://www.averagesalarysurvey.com/kosovo )</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+  <div class="table11" style="overflow-x:auto;">
+    <table class="styled-table">
+      <thead>
+        <tr>
+          <th>Profesionet</th>
+          <th>Paga mesatare (EUR)</th>
+          <th>Paga mesatare (USD)</th>
+          <th>Salary entries</th>
+        </tr>
+      </thead>
+
+      <tbody>
+        <tr>
+          <td>Doktor</td>
+          <td>6,133</td>
+          <td>6,643</td>
+          <td>03</td>
+        </tr>
+        <tr>
+          <td>Menaxher i resurseve humane</td>
+          <td>48,000</td>
+          <td>56,590</td>
+          <td>02</td>
+        </tr>
+        <tr>
+          <td>Menaxher i IT</td>
+          <td>45,000</td>
+          <td>54,335</td>
+          <td>02</td>
+
+        </tr>
+        <tr>
+          <td>Menaxher Inxhinierk</td>
+          <td>38,300</td>
+          <td>46,245</td>
+          <td>02</td>
+        </tr>
+        <tr>
+          <td>Zhvillues(Developer) Kryesor</td>
+          <td>24,200</td>
+          <td>32,893</td>
+          <td>02</td>
+        </tr>
+
+        <tr>
+          <td>Arkitekt</td>
+          <td>18,00</td>
+          <td>21,827</td>
+          <td>02</td>
+        </tr>
+
+        <tr>
+          <td>Koordinator i IT</td>
+          <td>16,500</td>
+          <td>18,299</td>
+          <td>02</td>
+        </tr>
+
+        <tr>
+          <td>Analist i financave</td>
+          <td>12,780</td>
+          <td>14,199</td>
+          <td>02</td>
+        </tr>
+
+        <tr>
+          <td>Menaxher projektesh</td>
+          <td>11,000</td>
+          <td>11,819</td>
+          <td>02</td>
+        </tr>
+
+        <tr>
+          <td>Pun&eumltor nd&eumlrtimi</td>
+          <td>24,200</td>
+          <td>32,893</td>
+          <td>02</td>
+        </tr>
+
+      </tbody>
+    </table>
+  </div>
+  <div class="tabela22" style="overflow-x:auto;">
+
+
+    <table class="styled-table">
+      <thead>
+        <tr>
+          <th>Shkalla e shkollimit</th>
+          <th>Paga mesatare(EUR)</th>
+          <th>Paga mesatare(USD)</th>
+          <th>Salary entries</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>Doktoratura</td>
+          <td>36,666</td>
+          <td>46,802</td>
+          <td>03</td>
+        </tr>
+
+        <tr>
+          <td>Master</td>
+          <td>22,850</td>
+          <td>27,381</td>
+          <td>20</td>
+        </tr>
+
+        <tr>
+          <td>Bachelor</td>
+          <td>28,346</td>
+          <td>33,251</td>
+          <td>30</td>
+        </tr>
+
+        <tr>
+          <td>Kolegje private</td>
+          <td>12,500</td>
+          <td>15,473</td>
+          <td>05</td>
+        </tr>
+
+        <tr>
+          <td>Shkolla e mesme</td>
+          <td>21,090</td>
+          <td>23,693</td>
+          <td>05</td>
+        </tr>
+
+        <tr>
+          <td>Posht&euml Sh.M</td>
+          <td>21,600</td>
+          <td>23,208</td>
+          <td>01</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+
+  <div class="buttonFS">
+    <button type="button" id="buttonF">Fsheh tabelat</button>
+    <button type="button" id="buttonS">Shfaq tabelat</button>
+  </div>
+  <script>
+    $(document).ready(function() {
+      $("#buttonF").click(function() {
+        $(".styled-table").hide();
+      });
+      $("#buttonS").click(function() {
+        $(".styled-table").show();
+      });
+    });
+  </script>
+
+  <script>
+    $(document).ready(function() {
+      $(".buttonFS").hover(function() {
+        $(this).animate({
+          opacity: '0.8'
+        });
+
+      });
+    });
+  </script>
+
+
+
+
   <script src="projekti.js"></script>
 
   <section id="aboutus">
@@ -184,7 +367,7 @@
           <a href="https://www.instagram.com/genttrim_/"><i class="fa fa-instagram"></i></a>
           <a href="mailto:gentrim.canolli@student.uni-pr.edu"><i class="fa fa-google"></i></a>
         </div>
-        <small>Krijoi dhe dizajnoi <span style="color:rgba(130,190,232,1);">Kryefaqen</span></small>
+        <small>Krijoi dhe dizajnoi <span style="color:rgba(130,190,232,1);">Kryefaqen, K&eumlshilla</span></small>
       </div>
 
 
@@ -195,9 +378,9 @@
         <div class="socials2">
           <a href="https://www.facebook.com/festina.gashi.35"><i class="fa fa-facebook"></i></a>
           <a href="https://www.instagram.com/festina.g/"><i class="fa fa-instagram"></i></a>
-          <a href="#"><i class="fa fa-google"></i></a>
+          <a href="mailto:festina.gashi6@student.uni-pr.edu"><i class="fa fa-google"></i></a>
         </div>
-        <small>Krijoi dhe dizajnoi <span style="color:rgba(130,190,232,1);;">Krijo CV</span></small>
+        <small>Krijoi dhe dizajnoi <span style="color:rgba(130,190,232,1);;">Krijo CV, K&eumlshilla</span></small>
       </div>
 
       <div class="profili">
@@ -206,7 +389,7 @@
         <div class="socials2">
           <a href="https://www.facebook.com/gentiana.mejzini.1"><i class="fa fa-facebook"></i></a>
           <a href="https://www.instagram.com/gentianamejzini/"><i class="fa fa-instagram"></i></a>
-          <a href="#"><i class="fa fa-google"></i></a>
+          <a href="mailto:gentiana.mejzini@student.uni-pr.edu"><i class="fa fa-google"></i></a>
         </div>
         <small>Krijoi dhe dizajnoi <span style="color:rgba(130,190,232,1);;">Kuiz</span></small>
       </div>
@@ -215,27 +398,25 @@
         <h4>Gentiana <br> Shabani</h4>
         <img src="img/antari2.jpg" alt="">
         <div class="socials2">
-          <a href="#"><i class="fa fa-facebook"></i></a>
+          <a href="https://www.facebook.com/gentiana.shabani.733"><i class="fa fa-facebook"></i></a>
           <a href="https://www.instagram.com/gentianashabani02/"><i class="fa fa-instagram"></i></a>
-          <a href="#"><i class="fa fa-google"></i></a>
+          <a href="mailto:gentiana.shabani3@student.uni-pr.edu"><i class="fa fa-google"></i></a>
         </div>
         <small>Krijoi dhe dizajnoi <span style="color:rgba(130,190,232,1);">Shpallje</span></small>
-      </div>
-
-      <div class="profili">
-        <h4>Gentrit <br> Hyseni</h4>
-        <img src="img/antari1.jpg" alt="">
-        <div class="socials2">
-          <a href="https://www.facebook.com/Gentrit.hyseni11" abbr><i class="fa fa-facebook"></i></a>
-          <a href="https://www.instagram.com/genti_hyseni/"><i class="fa fa-instagram"></i></a>
-          <a href="#"><i class="fa fa-google"></i></a>
-        </div>
-        <small>Krijoi dhe dizajnoi <span style="color:rgba(130,190,232,1);">K&eumlshilla</span></small>
       </div>
     </div>
   </section>
 
-  <canvas id="Canvas1" width="100" height="5px"></canvas>
+  <div class="kontakti">
+    <form action="kontakto.html">
+      <input type="submit" value="Na kontaktoni" id="kontaktiInput" />
+    </form>
+  </div>
+
+
+
+
+  <canvas id="Canvas1" width="100%" height="5px"></canvas>
   <script>
     var canvas = document.getElementById('Canvas1');
     var context = canvas.getContext('2d');
@@ -246,7 +427,6 @@
     context.fillStyle = grd;
     context.fill();
   </script>
-
 
 
   <footer class="footer">
@@ -268,24 +448,24 @@
         <h2>Linqet</h2>
 
         <ul class="box">
-          <li> <a href="#">Kryefaqja</a> </li>
-          <li> <a href="#">Krijo CV</a> </li>
-          <li> <a href="#">Kuiz</a> </li>
-          <li> <a href="#">Shpallje</a> </li>
-          <li> <a href="#">K&eumlshilla</a> </li>
+          <li> <a href="index.html">Kryefaqja</a> </li>
+          <li> <a href="cv.html">Krijo CV</a> </li>
+          <li> <a href="quiz.html">Kuiz</a> </li>
+          <li> <a href="shpalljePune.html">Shpallje</a> </li>
+          <li> <a href="keshilla.html">K&eumlshilla</a> </li>
         </ul>
       </li>
 
 
       <li class="features">
-        <h2>Na Kontakto</h2>
+        <h2>T&euml dh&eumlna</h2>
 
         <ul class="box">
           <li> <a
               href="https://www.google.com/maps/place/Universiteti+i+Prishtin%C3%ABs/@42.6484076,21.1665845,19z/data=!3m1!4b1!4m12!1m6!3m5!1s0x13549ec1b5430613:0x76c9353194f18686!2sUniversiteti+i+Prishtin%C3%ABs!8m2!3d42.6484076!4d21.1671317!3m4!1s0x13549ec1b5430613:0x76c9353194f18686!8m2!3d42.6484076!4d21.1671317">Rr.
               "George Bush", Nr.31, 10 000 Prishtinë, Republika e Kosovës</a></li>
           <li> <a href="https://contacts.google.com/">Tel: +38345463922</a></li>
-          <li> <a href="mailto:gentrim.canolli@student.uni-pr.edu">Email: gentrim.canolli@student.uni-pr.edu</a></li>
+          <li><a href="mailto:punaideale@gmail.com">Email: punaideale@gmail.com</a></li>
 
         </ul>
       </li>
@@ -300,16 +480,18 @@
     var currentTime = new Date().getHours();
     if (document.body) {
       if (6 <= currentTime && currentTime < 17) {
-        document.body.background = "https://www.solidbackgrounds.com/images/1920x1080/1920x1080-light-blue-solid-color-background.jpg";
+        document.body.background = "https://webgradients.com/public/webgradients_png/030%20Happy%20Fisher.png";
       } else {
         document.body.background =
-          "https://www.enasco.com/medias/9728706N-main-530Wx530H?context=bWFzdGVyfHJvb3R8NDYxMnxpbWFnZS9qcGVnfGg2ZS9oYjMvODg4OTY4NjQ5MTE2Ni5qcGd8NDA5NDIyZDA4Njk4M2RhYWMwOGYxNTQ3NjZlMzk2OGIyYTk4ZGUwZDYxMTNlZGQ1MDczNzAyNDAzNDg0NzA4ZQ"
+          "https://wallpapercave.com/wp/wp3006038.png"
       }
     }
   </script>
 
 
-
+  <script type="text/javascript">
+    sessionStorage.setItem('UEB i realizuar nga', 'Studentet')
+  </script>
 
 
 </body>
