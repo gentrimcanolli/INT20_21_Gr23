@@ -31,7 +31,7 @@ function makeList() {
 		{
 			name:'Sach Pizza',
 			status: 'Full Time',
-			position: "<b>Sach Pizza hapë vende të lira të punës për:</b><br></br><ul><li>Pozitat e kërkuar:<li>Kuzhinier</li><li>Ndihmës kuzhine</li><li>Barist/e</li><li>Banakiere</li><li>Arkatare</li><li>Kamarier/e;Delivery</li></ul><br></br>",
+			position: "<b>Sach Pizza hapë vende të lira të punës për:</b><br></br><ul><li>Pozitat e kërkuar:<li>Kuzhinier</li><li>Ndihmës kuzhine</li><li>Barist/e</li><li>Banakiere</li><li>Arkatare</li><li>Kamarier/e</li><li>Delivery</li></ul><br></br>",
 			conditions: "<b>Kushtet që punëtori do të ketë:</b><br></br><ul><li>Punonjës: i rregulltë</li><li>Orari i punës: i plotë</li><li>Vendi i punës: Lipjan</li><li>Afati për aplikim deri më: 03/02/2021</li></ul><br></br>",
 			responsibilities: "<b>Detyrat e punëtorve:</b><br></br><ul><li>Mirëpret dhe shërben klientët</li><li>Mirëmbajtja e lokalit</li><li>Kryerja e pagesave</li></ul><br></br>",
 			qualification: "<b>Kualifikimet:</b><br></br><ul><li>Arsimimi i mesëm</li><li>Preferohet përvojë pune paraprake</li><li>Të posedojë patentë shofer (kategoria B) për pozitën delivery</li><li>Shkathtësi të mira komunikuese dhe kuptimi i kërkesave të klientit</li><li>Preferohet njohja e gjuhës angleze</li></ul><br></br>",

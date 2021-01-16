@@ -1,13 +1,43 @@
+$desktop:1200px;
+$phone:480px;
+
 .body-container{
 	margin:100px;
 
 }
+
+@media screen and (max-width: 760px){
+  .conatiner-1{
+    flex-wrap: wrap !important;
+    justify-content: center;
+  }
+  .details-container{
+    margin-bottom:20px;
+  }
+  .logo-container img{
+    height: 100px !important;
+  }
+  body{
+    margin:0 !important;
+  }
+  .body{
+    padding: 0 !important;
+  }
+  .div{
+
+    margin-right: 10px !important;
+    margin-left: 10px !important;
+  }
+  .details-container1{
+    margin-right: 0px !important;
+  }
+
+}
+
 .body{
 	background-color: aliceblue;
 	padding: 70px;
-  @media scree and (max-width: 1200px;) and (min-width: 480px;){
-    background-color: lightblue;
-  }
+
 }
 
 .cardWrapper{
@@ -22,9 +52,7 @@
 	display: flex;
     justify-content: center;
     align-items: center;
-    @media scree and (max-width: 1200px;) and (min-width: 480px;){
-    background-color: lightblue;
-  }
+
 }
 .logo-container{
 	background-color: white;
