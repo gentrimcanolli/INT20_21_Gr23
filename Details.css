@@ -4,6 +4,9 @@
 .body{
 	background-color: aliceblue;
 	padding: 70px;
+  @media scree and (max-width: 1200px;) and (min-width: 480px;){
+    background-color: lightblue;
+  }
 }
 
 .cardWrapper{
