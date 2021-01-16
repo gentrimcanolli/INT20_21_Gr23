@@ -350,6 +350,10 @@ h2 {
   background-color: #f3f3f3;
 }
 
+.styled-table tbody tr:nth-of-type(odd) {
+  background-color: rgba(188, 197, 213, 1);
+}
+
 .styled-table tbody tr:last-of-type {
   border-bottom: 2px solid rgba(21, 134, 189, 1);
 }
@@ -471,11 +475,8 @@ h2 {
   .drop {
     font-size: 12.5px;
   }
+}
 
-  #veshje {
-    justify-content: center;
-  }
-
-  .svgCanvas svg, canvas {
-    margin-top: 20px;
-  }
+.svgCanvas {
+  margin-top: 20px;
+}
