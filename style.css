@@ -34,5 +34,13 @@
     transform: scale(1.1);
 }
 
+@media screen and (max-width:550px) {
+  .book {
+    margin: auto;
+    width: 50%;
+    font-size: 15px;
+  }
+}
+
 
 
